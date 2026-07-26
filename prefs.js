@@ -197,7 +197,7 @@ const DockSettings = GObject.registerClass({
             extensionPreferences.metadata['gettext-domain']);
         this._builder.add_from_file(`${extensionPreferences.path}/Settings.ui`);
 
-        this.widget = this._builder.get_object('settings_notebook');
+        this.widget = this._builder.get_object('settings_root');
 
         // Set a reasonable initial window size
         this.widget.connect('realize', () => {
